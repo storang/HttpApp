@@ -1,0 +1,22 @@
+<script src="js/jquery-1.11.1.min.js"></script>
+<li class="flag" name="wr_table">
+	<a href="workorder/wr_tables.jsp"><span class="glyphicon glyphicon-list-alt" ></span>投诉工单管理</a>
+</li>
+<li class="flag" name="usernum"><a href="usernum/usernum.jsp"><span class="glyphicon glyphicon-th" ></span>用户数统计报表</a></li>
+<li class="flag" name="mobile"><a href="mobile/mobile.jsp"><span class="glyphicon glyphicon-stats" ></span>国漫开通范围管理</a></li>
+<li class="flag" name="workorder"><a href="dialing/dialing.jsp"><span class="glyphicon glyphicon-list-alt" ></span>主叫显示管理</a></li>
+<li class="flag" name="manager"><a href="manager/manager.jsp"><span class="glyphicon glyphicon-list-alt" ></span>主叫显示和国漫管理</a></li>
+<li role="presentation" class="divider"></li>
+<li class="flag" name="login"><a href="workorder/login.jsp"><span class="glyphicon glyphicon-user" ></span>登出</a></li>
+<li class="flag" name="user"><a href="user/user.jsp"><span class="glyphicon glyphicon-user" ></span>个人信息</a></li>
+<script>
+	$(function(){
+		 var li = $(".flag");
+		 var table = $("#nav");
+		for(var i=0;i<li.length;i++){
+			 if($(li[i]).attr("name")==table.attr("class")){
+					$(li[i]).attr("class","active");
+			} 
+		} 
+	}) 
+</script>

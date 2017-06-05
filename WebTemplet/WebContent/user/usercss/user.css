@@ -1,0 +1,15 @@
+.box{
+	width:50%;margin-
+	top:10%;margin:auto;padding:28px;
+	height:350px;border:1px#111 solid;
+	display:none;
+}
+.box.show{display:block;}
+.box.x{
+	font-size:18px;text-
+	algin:right;display:block;	
+}
+.box.input{
+	width:80%;font-size:18px;margin-
+	top:18px;
+}
